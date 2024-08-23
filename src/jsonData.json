@@ -1,0 +1,208 @@
+{
+  "viaggi": [
+    {
+      "id": 0,
+      "immagine": "https://www.toscana.info/wp-content/uploads/sites/123/pienza.jpg",
+      "titolo": "Viaggio in Toscana",
+      "descrizione": "Un meraviglioso viaggio alla scoperta delle colline toscane, dei suoi borghi storici e della cucina locale.",
+      "dataInizio": "2024-09-15",
+      "dataFine": "2024-09-22",
+      "giornate": [
+        {
+          "data": "2024-09-15",
+          "titolo": "Arrivo a Firenze",
+          "descrizione": "Giornata dedicata all'arrivo e alla scoperta del centro storico di Firenze.",
+          "tappe": [
+            {
+              "titolo": "Piazza del Duomo",
+              "descrizione": "Visita al Duomo di Firenze e alla famosa cupola del Brunelleschi.",
+              "oraInizio": "09:00",
+              "oraFine": "11:00",
+              "location": {
+                "latitudine": 43.773418,
+                "longitudine": 11.255176
+              },
+              "immagine": "https://example.com/duomo.jpg",
+              "cibo": "Colazione con cappuccino e cornetto in una caffetteria vicina.",
+              "curiosità": "La cupola del Brunelleschi è la più grande cupola in muratura mai costruita."
+            },
+            {
+              "titolo": "Galleria degli Uffizi",
+              "descrizione": "Visita alla famosa galleria d'arte con opere di Botticelli, Leonardo e Michelangelo.",
+              "oraInizio": "11:30",
+              "oraFine": "14:00",
+              "location": {
+                "latitudine": 43.767799,
+                "longitudine": 11.255182
+              },
+              "immagine": "https://example.com/uffizi.jpg",
+              "cibo": "Pranzo a base di pasta fresca in un ristorante vicino.",
+              "curiosità": "La Galleria degli Uffizi è uno dei musei più visitati al mondo."
+            },
+            {
+              "titolo": "Ponte Vecchio",
+              "descrizione": "Passeggiata sul Ponte Vecchio, famoso per le sue botteghe di gioiellieri.",
+              "oraInizio": "15:00",
+              "oraFine": "16:00",
+              "location": {
+                "latitudine": 43.768732,
+                "longitudine": 11.253219
+              },
+              "immagine": "https://example.com/pontevecchio.jpg",
+              "cibo": "Gelato artigianale da gustare lungo il fiume Arno.",
+              "curiosità": "Il Ponte Vecchio è uno dei simboli di Firenze e l'unico ponte rimasto intatto durante la Seconda Guerra Mondiale."
+            }
+          ]
+        },
+        {
+          "data": "2024-09-16",
+          "titolo": "Escursione a Siena",
+          "descrizione": "Giornata dedicata alla scoperta di Siena, una delle città medievali più belle d'Italia.",
+          "tappe": [
+            {
+              "titolo": "Piazza del Campo",
+              "descrizione": "Visita alla piazza principale di Siena, famosa per il Palio.",
+              "oraInizio": "10:00",
+              "oraFine": "12:00",
+              "location": {
+                "latitudine": 43.318611,
+                "longitudine": 11.331389
+              },
+              "immagine": "https://example.com/piazzadelcampo.jpg",
+              "cibo": "Colazione con dolci tipici senesi, come il panforte.",
+              "curiosità": "La piazza ha una forma a conchiglia unica nel suo genere."
+            },
+            {
+              "titolo": "Duomo di Siena",
+              "descrizione": "Visita alla cattedrale gotica con i suoi splendidi pavimenti marmorei.",
+              "oraInizio": "12:30",
+              "oraFine": "14:00",
+              "location": {
+                "latitudine": 43.317222,
+                "longitudine": 11.328889
+              },
+              "immagine": "https://example.com/duomosiena.jpg",
+              "cibo": "Pranzo con pici all'aglione, un piatto tipico della cucina senese.",
+              "curiosità": "Il Duomo di Siena è famoso per i suoi pavimenti riccamente decorati che vengono scoperti solo in alcune parti dell'anno."
+            },
+            {
+              "titolo": "Torre del Mangia",
+              "descrizione": "Salita alla torre per una vista panoramica mozzafiato su Siena e la campagna circostante.",
+              "oraInizio": "15:00",
+              "oraFine": "16:00",
+              "location": {
+                "latitudine": 43.318333,
+                "longitudine": 11.331111
+              },
+              "immagine": "https://example.com/torredelmangia.jpg",
+              "cibo": "Merenda con ricciarelli, i biscotti tipici di Siena.",
+              "curiosità": "La Torre del Mangia è alta 102 metri ed è la seconda torre medievale più alta d'Italia."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "immagine": "https://static2-viaggi.corriereobjects.it/wp-content/uploads/2015/06/kirkjufell-islanda-istock.jpg.webp?v=1689967365",
+      "titolo": "Avventura in Islanda",
+      "descrizione": "Esplora le meraviglie naturali dell'Islanda, dai geyser alle cascate, passando per i ghiacciai e le spiagge nere.",
+      "dataInizio": "2024-10-01",
+      "dataFine": "2024-10-10",
+      "giornate": [
+        {
+          "data": "2024-10-01",
+          "titolo": "Arrivo a Reykjavik",
+          "descrizione": "Scopri la capitale islandese, con il suo mix di modernità e tradizione.",
+          "tappe": [
+            {
+              "titolo": "Hallgrímskirkja",
+              "descrizione": "Visita alla famosa chiesa di Reykjavik con la sua imponente architettura moderna.",
+              "oraInizio": "10:00",
+              "oraFine": "11:00",
+              "location": {
+                "latitudine": 64.142272,
+                "longitudine": -21.926611
+              },
+              "immagine": "https://example.com/hallgrimskirkja.jpg",
+              "cibo": "Colazione in una caffetteria locale con caffè islandese e dolci tradizionali.",
+              "curiosità": "La Hallgrímskirkja è la chiesa più alta d'Islanda e uno dei suoi edifici più iconici."
+            },
+            {
+              "titolo": "Harpa Concert Hall",
+              "descrizione": "Esplora il centro culturale di Reykjavik, noto per la sua architettura avanguardistica.",
+              "oraInizio": "11:30",
+              "oraFine": "12:30",
+              "location": {
+                "latitudine": 64.150722,
+                "longitudine": -21.932776
+              },
+              "immagine": "https://example.com/harpa.jpg",
+              "cibo": "Pranzo a base di zuppa di pesce in un ristorante vicino al porto.",
+              "curiosità": "L'edificio della Harpa è ispirato alle formazioni basaltiche che caratterizzano l'Islanda."
+            },
+            {
+              "titolo": "Passeggiata lungo il Laugavegur",
+              "descrizione": "Goditi lo shopping e la vibrante vita locale sulla strada più famosa di Reykjavik.",
+              "oraInizio": "14:00",
+              "oraFine": "16:00",
+              "location": {
+                "latitudine": 64.146753,
+                "longitudine": -21.917789
+              },
+              "immagine": "https://example.com/laugavegur.jpg",
+              "cibo": "Assaggia i famosi hot dog islandesi lungo il percorso.",
+              "curiosità": "Laugavegur è una delle strade commerciali più antiche e importanti dell'Islanda."
+            }
+          ]
+        },
+        {
+          "data": "2024-10-02",
+          "titolo": "Il Circolo d'Oro",
+          "descrizione": "Escursione al Circolo d'Oro, uno dei percorsi turistici più famosi dell'Islanda.",
+          "tappe": [
+            {
+              "titolo": "Þingvellir National Park",
+              "descrizione": "Esplora il sito del primo parlamento islandese e la spaccatura tra le placche tettoniche.",
+              "oraInizio": "09:00",
+              "oraFine": "11:00",
+              "location": {
+                "latitudine": 64.255900,
+                "longitudine": -21.130701
+              },
+              "immagine": "https://example.com/thingvellir.jpg",
+              "cibo": "Pranzo al sacco nel parco, circondati da paesaggi mozzafiato.",
+              "curiosità": "Þingvellir è uno dei pochi luoghi al mondo dove è possibile vedere la spaccatura tra due placche tettoniche."
+            },
+            {
+              "titolo": "Geysir",
+              "descrizione": "Ammira il geyser Strokkur che erutta ogni pochi minuti.",
+              "oraInizio": "12:00",
+              "oraFine": "13:00",
+              "location": {
+                "latitudine": 64.310436,
+                "longitudine": -20.302381
+              },
+              "immagine": "https://example.com/geysir.jpg",
+              "cibo": "Pranzo a base di lamb soup nel vicino centro visitatori.",
+              "curiosità": "Il termine 'geyser' deriva proprio dal nome di questo luogo."
+            },
+            {
+              "titolo": "Cascata Gullfoss",
+              "descrizione": "Visita a una delle cascate più spettacolari dell'Islanda.",
+              "oraInizio": "14:00",
+              "oraFine": "15:00",
+              "location": {
+                "latitudine": 64.326111,
+                "longitudine": -20.121944
+              },
+              "immagine": "https://example.com/gullfoss.jpg",
+              "cibo": "Snack a base di skyr, lo yogurt islandese, mentre si ammira la cascata.",
+              "curiosità": "Gullfoss significa 'Cascata d'Oro' ed è una delle più grandi cascate d'Europa."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
