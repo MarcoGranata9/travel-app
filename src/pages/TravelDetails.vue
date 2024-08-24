@@ -19,6 +19,7 @@ export default {
         <div class="row row-col-4 p-3">
             <div class="col-3" v-for="(day, index) in store.data.viaggi[id].giornate" :key="index">
                 <DetailsCard :day=day :index=index></DetailsCard>
+                
             </div>
         </div>
     </div>

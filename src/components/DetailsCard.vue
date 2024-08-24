@@ -1,83 +1,120 @@
 <script>
 export default {
-    data() {
-        return {
-            cardColors: ['widget-49-date-primary','widget-49-date-success','widget-49-date-warning'],
-        }
-    },
-    props: {
-        day: Object,
-        index: Number
+  data() {
+    return {
+      cardColors: ['widget-49-date-primary', 'widget-49-date-success', 'widget-49-date-warning'],
     }
+  },
+  props: {
+    day: Object,
+    index: Number
+  },
+  methods: {
+    monthToStr(input) {
+      switch (input) {
+        case "01":
+          return "GEN"
+        case "02":
+          return "FEB"
+        case "03":
+          return "MAR"
+        case "04":
+          return "APR"
+        case "05":
+          return "MAG"
+        case "06":
+          return "GIU"
+        case "07":
+          return "LUG"
+        case "08":
+          return "AGO"
+        case "09":
+          return "SET"
+        case "10":
+          return "OTT"
+        case "11":
+          return "NOV"
+        case "12":
+          return "DIC"
+        default:
+          break;
+      }
+    }
+    
+  }
 }
 </script>
 
 <template>
-    <div class="card card-margin">
-        <div class="card-header no-border">
-            <h5 class="card-title text-center">{{ day.titolo }}</h5>
-        </div>
-        <div class="card-body pt-0">
-            <div class="widget-49">
-                <div class="widget-49-title-wrapper">
-                    <div :class="cardColors[index%3]">
-                        <span class="widget-49-date-day">{{day.data.split('-')[2]}}</span>
-                        <span class="widget-49-date-month">{{ day.data.split('-')[1] }}</span>
-                    </div>
-                    <div class="widget-49-meeting-info">
-                        <span class="widget-49-pro-title">{{ day.descrizione }}</span>
-                    </div>
-                </div>
-                <h6 class="mt-2">Tappe:</h6>
-                <ol class="widget-49-meeting-points">
-                    <li class="widget-49-meeting-item" v-for="tappa in day.tappe" :key="tappa.titolo"><span>{{ tappa.titolo }}</span></li>
-                   
-                </ol>
-                <div class="widget-49-meeting-action">
-                    <a href="#" class="btn btn-sm btn-flash-border-primary">View All</a>
-                </div>
-            </div>
-        </div>
+  <div class="card card-margin">
+    <div class="card-header no-border">
+      <h5 class="card-title text-center">{{ day.titolo }}</h5>
     </div>
+    <div class="card-body pt-0">
+      <div class="widget-49">
+        <div class="widget-49-title-wrapper">
+          <div :class="cardColors[index % 3]">
+            <span class="widget-49-date-day">{{ day.data.split('-')[2] }}</span>
+            <span class="widget-49-date-month">{{ monthToStr(day.data.split('-')[1]) }}</span>
+          </div>
+          <div class="widget-49-meeting-info">
+            <span class="widget-49-pro-title">{{ day.descrizione }}</span>
+          </div>
+        </div>
+        <h6 class="mt-2">Tappe:</h6>
+        <ol class="widget-49-meeting-points">
+          <li class="widget-49-meeting-item" v-for="tappa in day.tappe" :key="tappa.titolo"><span>{{ tappa.titolo
+              }}</span></li>
+
+        </ol>
+        <div class="widget-49-meeting-action">
+          <a href="#" class="btn btn-sm btn-flash-border-primary">View All</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
 .card-margin {
-    margin-bottom: 1.875rem;
+  margin-bottom: 1.875rem;
 }
 
 .card {
-    border: 0;
-    box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
-    -ms-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+  border: 0;
+  box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+  -ms-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
 }
+
 .card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #ffffff;
-    background-clip: border-box;
-    border: 1px solid #e6e4e9;
-    border-radius: 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #ffffff;
+  background-clip: border-box;
+  border: 1px solid #e6e4e9;
+  border-radius: 8px;
 }
 
 .card .card-header.no-border {
-    border: 0;
+  border: 0;
 }
+
 .card .card-header {
-    background: none;
-    padding: 0 0.9375rem;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    min-height: 50px;
+  background: none;
+  padding: 0 0.9375rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  min-height: 50px;
 }
+
 .card-header:first-child {
-    border-radius: calc(8px - 1px) calc(8px - 1px) 0 0;
+  border-radius: calc(8px - 1px) calc(8px - 1px) 0 0;
 }
 
 .widget-49 .widget-49-title-wrapper {
@@ -348,5 +385,4 @@ export default {
 .widget-49 .widget-49-meeting-action a {
   text-transform: uppercase;
 }
-
 </style>
