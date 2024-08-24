@@ -7,7 +7,8 @@ export default {
   },
   props: {
     day: Object,
-    index: Number
+    index: Number,
+    id: String
   },
   methods: {
     monthToStr(input) {
@@ -68,7 +69,8 @@ export default {
 
         </ol>
         <div class="widget-49-meeting-action">
-          <a href="#" class="btn btn-sm btn-flash-border-primary">View All</a>
+          <p>{{ id }}</p>
+          <router-link :to="{name: 'map', params: { id: id, index:index}}" class="btn btn-sm btn-flash-border-primary">Vedi le tappe sulla mappa</router-link>
         </div>
       </div>
     </div>
