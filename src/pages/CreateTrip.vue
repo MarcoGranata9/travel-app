@@ -15,17 +15,13 @@ export default {
         }
     },
     methods: {
-        getLength() {
-            console.log(this.data.viaggi.length);
-            console.log(this.data.viaggi[this.data.viaggi.length - 1].titolo);
-        },
         setId() {
             this.viaggio.id = this.store.data.viaggi.length
         },
         saveData() {
             this.setId()
             this.store.data.viaggi.push(this.viaggio)
-            localStorage.setItem("data", JSON.stringify(this.data));
+            localStorage.setItem("data", JSON.stringify(this.store.data));
         }
 
     }

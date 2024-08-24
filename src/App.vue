@@ -1,11 +1,11 @@
 <script>
 import Header from './components/Header.vue'
 import jsonData from "./jsonData.json"
-
+import { store } from './store';
 export default {
   data() {
     return {
-
+      store
     };
   },
   components: {Header},
@@ -13,6 +13,9 @@ export default {
     if(localStorage.getItem("data") === null) {
       localStorage.setItem("data", JSON.stringify(jsonData))
     }
+  },
+  created() {
+    this.store.data = JSON.parse(localStorage.getItem("data"))
   }
 }
 
