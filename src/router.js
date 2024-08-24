@@ -3,6 +3,7 @@ import HomePage from "./pages/HomePage.vue";
 import TravelPage from "./pages/TravelPage.vue";
 import TravelDetails from "./pages/TravelDetails.vue";
 import NotFound from "./pages/NotFound.vue";
+import CreateTrip from "./pages/CreateTrip.vue";
 
 const router = createRouter({
     history: createWebHistory(),
@@ -22,6 +23,11 @@ const router = createRouter({
             name: 'details',
             component: TravelDetails,
             props: true,
+        },
+        {
+            path: '/new-trip',
+            name: 'create',
+            component: CreateTrip,
         },
         {
             path: '/:pathMatch(.*)*',

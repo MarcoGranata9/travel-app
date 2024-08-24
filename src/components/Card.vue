@@ -20,7 +20,7 @@ export default {
             <p class="card-text">Inizio Viaggio: {{ trip.dataInizio }}</p>
             <p class="card-text">Fine Viaggio: {{ trip.dataFine }}</p>
 
-            <router-link :to="{name: 'details', params: { id: trip.id}}" class="btn btn-primary">Go somewhere</router-link>
+            <router-link :to="{name: 'details', params: { id: trip.id}}" class="btn btn-primary">Mostra Giornate</router-link>
         </div>
     </div>
 </template>

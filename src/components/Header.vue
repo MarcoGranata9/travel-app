@@ -8,6 +8,10 @@ export default{
                     title: 'Home',
                 },
                 {
+                    name: 'create',
+                    title: 'Crea un viaggio',
+                },
+                {
                     name: 'travel',
                     title: 'I tuoi Viaggi',
                 },
@@ -29,7 +33,7 @@ export default{
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item" v-for="link in links">
+        <li class="nav-item" v-for="link in links" :key="link.name">
             <router-link :to="{ name: link.name }" class="nav-link text-white fs-4 text">
                 {{link.title}}
             </router-link>

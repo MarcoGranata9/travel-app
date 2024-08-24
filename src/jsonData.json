@@ -5,11 +5,11 @@
       "immagine": "https://www.toscana.info/wp-content/uploads/sites/123/pienza.jpg",
       "titolo": "Viaggio in Toscana",
       "descrizione": "Un meraviglioso viaggio alla scoperta delle colline toscane, dei suoi borghi storici e della cucina locale.",
-      "dataInizio": "2024-09-15",
-      "dataFine": "2024-09-22",
+      "dataInizio": "2024-SET-15",
+      "dataFine": "2024-SET-22",
       "giornate": [
         {
-          "data": "2024-09-15",
+          "data": "2024-SET-15",
           "titolo": "Arrivo a Firenze",
           "descrizione": "Giornata dedicata all'arrivo e alla scoperta del centro storico di Firenze.",
           "tappe": [
@@ -55,7 +55,7 @@
           ]
         },
         {
-          "data": "2024-09-16",
+          "data": "2024-SET-16",
           "titolo": "Escursione a Siena",
           "descrizione": "Giornata dedicata alla scoperta di Siena, una delle città medievali più belle d'Italia.",
           "tappe": [
@@ -107,11 +107,11 @@
       "immagine": "https://static2-viaggi.corriereobjects.it/wp-content/uploads/2015/06/kirkjufell-islanda-istock.jpg.webp?v=1689967365",
       "titolo": "Avventura in Islanda",
       "descrizione": "Esplora le meraviglie naturali dell'Islanda, dai geyser alle cascate, passando per i ghiacciai e le spiagge nere.",
-      "dataInizio": "2024-10-01",
-      "dataFine": "2024-10-10",
+      "dataInizio": "2024-OTT-01",
+      "dataFine": "2024-OTT-10",
       "giornate": [
         {
-          "data": "2024-10-01",
+          "data": "2024-OTT-01",
           "titolo": "Arrivo a Reykjavik",
           "descrizione": "Scopri la capitale islandese, con il suo mix di modernità e tradizione.",
           "tappe": [
@@ -157,7 +157,7 @@
           ]
         },
         {
-          "data": "2024-10-02",
+          "data": "2024-OTT-02",
           "titolo": "Il Circolo d'Oro",
           "descrizione": "Escursione al Circolo d'Oro, uno dei percorsi turistici più famosi dell'Islanda.",
           "tappe": [

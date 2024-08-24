@@ -1,10 +1,10 @@
 <script>
-import jsonData from "../jsonData.json";
+import { store } from "../store";
 import Card from "../components/Card.vue";
 export default {
     data() {
         return {
-            data: jsonData
+            store
         };
     },
     components: {
@@ -16,8 +16,8 @@ export default {
 <template>
     <div class="container mt-4">
         <h1>I tuoi Viaggi</h1>
-        <div class="row row-col-4">
-            <div class="col-4" v-for="trip in data.viaggi" :key="trip.titolo">
+        <div class="row row-col-4 g-4">
+            <div class="col-4" v-for="trip in store.data.viaggi" :key="trip.titolo">
                 <Card :trip="trip"></Card>
             </div>
         </div>
