@@ -6,6 +6,7 @@ export default {
             store,
             viaggio: {
                 id: 0,
+                immagine: "",
                 titolo: "",
                 descrizione: "",
                 dataInizio: "",
@@ -34,14 +35,20 @@ export default {
         <div class="row justify-content-center p-5">
 
                 <div class="mb-3 col-8">
-                    <label for="title" class="form-label">Titolo</label>
+                    <label for="title" class="form-label">Dai un nome al tuo Viaggio</label>
                     <input v-model="viaggio.titolo" class="form-control" id="title" type="text"
-                        placeholder="Inserisci titolo" aria-label="default input example">
+                        placeholder="Inserisci nome" aria-label="default input example">
                 </div>
 
                 <div class="mb-3 col-8">
-                    <label for="description" class="form-label">Example textarea</label>
+                    <label for="description" class="form-label">Descrizione</label>
                     <textarea v-model="viaggio.descrizione" class="form-control" id="description" rows="3"></textarea>
+                </div>
+
+                <div class="mb-3 col-8">
+                    <label for="title" class="form-label">Inserisci un immagine</label>
+                    <input v-model="viaggio.immagine" class="form-control" id="title" type="text"
+                        placeholder="Inserisci URL" aria-label="default input example">
                 </div>
 
                 <div class="col-12 d-flex align-items-center justify-content-center">
@@ -59,7 +66,7 @@ export default {
                 </div>
 
                 <div class="col-12 d-flex align-items-center justify-content-center">
-                    <button @click="saveData" class="btn btn-primary" type="submit">Submit form</button>
+                    <router-link :to="{name: 'travel'}" @click="saveData" class="btn btn-primary" type="submit">Submit form</router-link>
                 </div>
 
                 <p>{{ viaggio.titolo }}</p>
@@ -67,9 +74,6 @@ export default {
                 <p>{{ viaggio.descrizione }}</p>
                 <p>{{ viaggio.dataInizio }}</p>
                 <p>{{ viaggio.dataFine }}</p>
-
-
-
         </div>
     </div>
 

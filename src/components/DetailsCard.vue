@@ -1,8 +1,10 @@
 <script>
+import { store } from '../store'
 export default {
   data() {
     return {
-      cardColors: ['widget-49-date-primary', 'widget-49-date-success', 'widget-49-date-warning'],
+      cardColors: ['widget-49-date-primary', 'widget-49-date-success', 'widget-49-date-warning','widget-49-date-danger'],
+      store,
     }
   },
   props: {
@@ -40,8 +42,11 @@ export default {
         default:
           break;
       }
+    },
+    deleteDay() {
+      this.store.data.viaggi[this.id].giornate.splice(this.index, 1)
+      localStorage.setItem("data", JSON.stringify(this.store.data))
     }
-    
   }
 }
 </script>
@@ -54,7 +59,7 @@ export default {
     <div class="card-body pt-0">
       <div class="widget-49">
         <div class="widget-49-title-wrapper">
-          <div :class="cardColors[index % 3]">
+          <div :class="cardColors[index % 4]">
             <span class="widget-49-date-day">{{ day.data.split('-')[2] }}</span>
             <span class="widget-49-date-month">{{ monthToStr(day.data.split('-')[1]) }}</span>
           </div>
@@ -69,8 +74,9 @@ export default {
 
         </ol>
         <div class="widget-49-meeting-action">
-          <p>{{ id }}</p>
+          <button @click="deleteDay(day)" class="btn btn-danger">Cancella</button>
           <router-link :to="{name: 'map', params: { id: id, index:index}}" class="btn btn-sm btn-flash-border-primary">Vedi le tappe sulla mappa</router-link>
+          <router-link :to="{name: 'stage', params: { id: id, index:index}}" class="btn btn-sm btn-flash-border-primary">Crea Tappa</router-link>
         </div>
       </div>
     </div>

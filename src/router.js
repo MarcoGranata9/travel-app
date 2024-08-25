@@ -5,6 +5,7 @@ import TravelDetails from "./pages/TravelDetails.vue";
 import NotFound from "./pages/NotFound.vue";
 import CreateTrip from "./pages/CreateTrip.vue";
 import MapPage from "./pages/MapPage.vue";
+import CreateStage from "./pages/CreateStage.vue";
 
 const router = createRouter({
     history: createWebHistory(),
@@ -34,6 +35,12 @@ const router = createRouter({
             path: '/map/:id/:index',
             name: 'map',
             component: MapPage,
+            props: true,
+        },
+        {
+            path: '/new-stage/:id/:index',
+            name: 'stage',
+            component: CreateStage,
             props: true,
         },
         {
