@@ -64,9 +64,11 @@ export default {
                 </div>
 
                 <div class="text-center">
-                    <router-link :to="{name: 'travel'}" @click="saveData" class="btn btn-primary btn-lg" type="submit">
-                        Salva Viaggio
-                    </router-link>
+                    <button :disabled="!viaggio.titolo || !viaggio.dataFine || !viaggio.dataInizio" class="btn btn-primary btn-lg">
+                        <router-link :to="{name: 'travel'}" class="text-white text-decoration-none" @click="saveData"  type="submit">
+                            Salva Viaggio
+                        </router-link>
+                    </button>
                 </div>
             </div>
         </div>

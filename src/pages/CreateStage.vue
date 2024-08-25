@@ -20,12 +20,17 @@ export default {
     mounted() {
         tt.setProductInfo("boh", "6.25.0")
         let tappe = store.data.viaggi[this.id].giornate[this.index].tappe
-        let tappa = this.tappa
+        let lat = 0
+        let lng = 0
+        if (tappe.length > 0) {
+            lat = tappe[0].location.latitudine
+            lng = tappe[0].location.longitudine
+        }
 
         const map = tt.map({
             key: this.apiKey,
             container: "map",
-            center: [tappe[0].location.longitudine, tappe[0].location.latitudine],
+            center: [lng, lat],
             zoom: 11,
             language: 'it-IT',
         })

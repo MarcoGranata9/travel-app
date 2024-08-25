@@ -43,7 +43,7 @@ export default {
 </script>
 
 <template>
-    <span :class="getValue, toggleClass" @click="toggleStatus" class="rounded-pill px-2">
+    <span :class="getValue, toggleClass" @click="toggleStatus" class="rounded-pill px-2 fs-6 text-nowrap">
         {{ toggleText }}
         <i v-if="isVisited" class="fa-solid fa-circle-check"></i>
         <i v-else class="fa-solid fa-circle-xmark"></i>
