@@ -24,7 +24,8 @@
               },
               "immagine": "https://example.com/duomo.jpg",
               "cibo": "Colazione con cappuccino e cornetto in una caffetteria vicina.",
-              "curiosità": "La cupola del Brunelleschi è la più grande cupola in muratura mai costruita."
+              "curiosità": "La cupola del Brunelleschi è la più grande cupola in muratura mai costruita.",
+              "visitata": false
             },
             {
               "titolo": "Galleria degli Uffizi",
@@ -37,7 +38,8 @@
               },
               "immagine": "https://example.com/uffizi.jpg",
               "cibo": "Pranzo a base di pasta fresca in un ristorante vicino.",
-              "curiosità": "La Galleria degli Uffizi è uno dei musei più visitati al mondo."
+              "curiosità": "La Galleria degli Uffizi è uno dei musei più visitati al mondo.",
+              "visitata": false
             },
             {
               "titolo": "Ponte Vecchio",
@@ -50,7 +52,8 @@
               },
               "immagine": "https://example.com/pontevecchio.jpg",
               "cibo": "Gelato artigianale da gustare lungo il fiume Arno.",
-              "curiosità": "Il Ponte Vecchio è uno dei simboli di Firenze e l'unico ponte rimasto intatto durante la Seconda Guerra Mondiale."
+              "curiosità": "Il Ponte Vecchio è uno dei simboli di Firenze e l'unico ponte rimasto intatto durante la Seconda Guerra Mondiale.",
+              "visitata": false
             }
           ]
         },
@@ -70,7 +73,8 @@
               },
               "immagine": "https://example.com/piazzadelcampo.jpg",
               "cibo": "Colazione con dolci tipici senesi, come il panforte.",
-              "curiosità": "La piazza ha una forma a conchiglia unica nel suo genere."
+              "curiosità": "La piazza ha una forma a conchiglia unica nel suo genere.",
+              "visitata": false
             },
             {
               "titolo": "Duomo di Siena",
@@ -83,7 +87,8 @@
               },
               "immagine": "https://example.com/duomosiena.jpg",
               "cibo": "Pranzo con pici all'aglione, un piatto tipico della cucina senese.",
-              "curiosità": "Il Duomo di Siena è famoso per i suoi pavimenti riccamente decorati che vengono scoperti solo in alcune parti dell'anno."
+              "curiosità": "Il Duomo di Siena è famoso per i suoi pavimenti riccamente decorati che vengono scoperti solo in alcune parti dell'anno.",
+              "visitata": false
             },
             {
               "titolo": "Torre del Mangia",
@@ -96,7 +101,8 @@
               },
               "immagine": "https://example.com/torredelmangia.jpg",
               "cibo": "Merenda con ricciarelli, i biscotti tipici di Siena.",
-              "curiosità": "La Torre del Mangia è alta 102 metri ed è la seconda torre medievale più alta d'Italia."
+              "curiosità": "La Torre del Mangia è alta 102 metri ed è la seconda torre medievale più alta d'Italia.",
+              "visitata": false
             }
           ]
         }
@@ -126,7 +132,8 @@
               },
               "immagine": "https://example.com/hallgrimskirkja.jpg",
               "cibo": "Colazione in una caffetteria locale con caffè islandese e dolci tradizionali.",
-              "curiosità": "La Hallgrímskirkja è la chiesa più alta d'Islanda e uno dei suoi edifici più iconici."
+              "curiosità": "La Hallgrímskirkja è la chiesa più alta d'Islanda e uno dei suoi edifici più iconici.",
+              "visitata": false
             },
             {
               "titolo": "Harpa Concert Hall",
@@ -139,7 +146,8 @@
               },
               "immagine": "https://example.com/harpa.jpg",
               "cibo": "Pranzo a base di zuppa di pesce in un ristorante vicino al porto.",
-              "curiosità": "L'edificio della Harpa è ispirato alle formazioni basaltiche che caratterizzano l'Islanda."
+              "curiosità": "L'edificio della Harpa è ispirato alle formazioni basaltiche che caratterizzano l'Islanda.",
+              "visitata": false
             },
             {
               "titolo": "Passeggiata lungo il Laugavegur",
@@ -152,7 +160,8 @@
               },
               "immagine": "https://example.com/laugavegur.jpg",
               "cibo": "Assaggia i famosi hot dog islandesi lungo il percorso.",
-              "curiosità": "Laugavegur è una delle strade commerciali più antiche e importanti dell'Islanda."
+              "curiosità": "Laugavegur è una delle strade commerciali più antiche e importanti dell'Islanda.",
+              "visitata": false
             }
           ]
         },
@@ -172,7 +181,8 @@
               },
               "immagine": "https://example.com/thingvellir.jpg",
               "cibo": "Pranzo al sacco nel parco, circondati da paesaggi mozzafiato.",
-              "curiosità": "Þingvellir è uno dei pochi luoghi al mondo dove è possibile vedere la spaccatura tra due placche tettoniche."
+              "curiosità": "Þingvellir è uno dei pochi luoghi al mondo dove è possibile vedere la spaccatura tra due placche tettoniche.",
+              "visitata": false
             },
             {
               "titolo": "Geysir",
@@ -185,7 +195,8 @@
               },
               "immagine": "https://example.com/geysir.jpg",
               "cibo": "Pranzo a base di lamb soup nel vicino centro visitatori.",
-              "curiosità": "Il termine 'geyser' deriva proprio dal nome di questo luogo."
+              "curiosità": "Il termine 'geyser' deriva proprio dal nome di questo luogo.",
+              "visitata": false
             },
             {
               "titolo": "Cascata Gullfoss",
@@ -198,7 +209,8 @@
               },
               "immagine": "https://example.com/gullfoss.jpg",
               "cibo": "Snack a base di skyr, lo yogurt islandese, mentre si ammira la cascata.",
-              "curiosità": "Gullfoss significa 'Cascata d'Oro' ed è una delle più grandi cascate d'Europa."
+              "curiosità": "Gullfoss significa 'Cascata d'Oro' ed è una delle più grandi cascate d'Europa.",
+              "visitata": false
             }
           ]
         }

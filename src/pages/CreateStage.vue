@@ -12,6 +12,7 @@ export default {
                     latitudine: 0,
                     longitudine: 0,
                 },
+                visitata: false,
             }
         }
     },
@@ -195,6 +196,7 @@ export default {
                     latitudine: 0,
                     longitudine: 0,
                 },
+                visitata: false,
             }
             localStorage.setItem("data", JSON.stringify(this.store.data));
         },

@@ -1,11 +1,15 @@
 <script>
 import { store } from '../store'
+import VisitedComp from './VisitedComp.vue'
 export default {
   data() {
     return {
       cardColors: ['widget-49-date-primary', 'widget-49-date-success', 'widget-49-date-warning','widget-49-date-danger'],
       store,
     }
+  },
+  components: {
+    VisitedComp,
   },
   props: {
     day: Object,
@@ -46,13 +50,19 @@ export default {
     deleteDay() {
       this.store.data.viaggi[this.id].giornate.splice(this.index, 1)
       localStorage.setItem("data", JSON.stringify(this.store.data))
+    },
+    getId() {
+      return this.id
+    },
+    getIndex() {
+      return this.index
     }
   }
 }
 </script>
 
 <template>
-  <div class="card card-margin">
+  <div class="card card-margin h-100">
     <div class="card-header no-border">
       <h5 class="card-title text-center">{{ day.titolo }}</h5>
     </div>
@@ -69,14 +79,18 @@ export default {
         </div>
         <h6 class="mt-2">Tappe:</h6>
         <ol class="widget-49-meeting-points">
-          <li class="widget-49-meeting-item" v-for="tappa in day.tappe" :key="tappa.titolo"><span>{{ tappa.titolo
-              }}</span></li>
+          <li class="widget-49-meeting-item d-flex justify-content-between" v-for="(tappa, index) in day.tappe" :key="tappa.titolo"><span>{{ tappa.titolo
+              }}</span><VisitedComp :id=getId() :dayInd=getIndex() :index=index></VisitedComp></li>
 
         </ol>
         <div class="widget-49-meeting-action">
-          <button @click="deleteDay(day)" class="btn btn-danger">Cancella</button>
-          <router-link :to="{name: 'map', params: { id: id, index:index}}" class="btn btn-sm btn-flash-border-primary">Vedi le tappe sulla mappa</router-link>
-          <router-link :to="{name: 'stage', params: { id: id, index:index}}" class="btn btn-sm btn-flash-border-primary">Crea Tappa</router-link>
+          <div class="d-flex justify-content-around mb-3">
+            <router-link :to="{name: 'map', params: { id: id, index:index}}" class="btn btn-sm btn-primary">Visualizza Tappe</router-link>
+            <router-link :to="{name: 'stage', params: { id: id, index:index}}" class="btn btn-sm btn-primary">Crea Tappa</router-link>
+          </div>
+          <div class="d-flex justify-content-center">
+            <button @click="deleteDay(day)" class="btn btn-sm btn-danger">ELIMINA GIORNATA</button>  
+          </div>
         </div>
       </div>
     </div>
