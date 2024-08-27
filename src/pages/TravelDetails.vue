@@ -39,7 +39,7 @@ export default {
 </script>
 
 <template>
-    <div class="container-flex m-5">
+    <div class="container-flex m-1 m-sm-5">
         <div class="d-flex">
             <!-- Sidebar -->
             <aside class="sidebar p-3">
@@ -56,7 +56,7 @@ export default {
             </aside>
 
             
-            <main class="content flex-grow-1 ms-3">
+            <main class="content flex-grow-1 ms-0 m-sm-3">
                 <h1 class="text-center mb-4">{{ store.data.viaggi[id].titolo }}</h1>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                     <div class="col" v-for="(day, index) in store.data.viaggi[id].giornate" :key="index">
@@ -72,6 +72,11 @@ export default {
 .d-flex {
     display: flex;
     flex-wrap: nowrap;
+    
+
+    @media (max-width: 600px) {
+       flex-direction: column;
+    }
 }
 
 .sidebar {
@@ -82,10 +87,21 @@ export default {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 50px;
+
+     @media (max-width: 600px) {
+        position: static;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 }
 
 .content {
     width: 75%;
+
+    @media (max-width: 600px) {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 }
 
 h1 {

@@ -20,6 +20,7 @@ export default {
     mounted() {
         tt.setProductInfo("boh", "6.25.0")
         let tappe = store.data.viaggi[this.id].giornate[this.index].tappe
+        let tappa = this.tappa
         let lat = 0
         let lng = 0
         if (tappe.length > 0) {

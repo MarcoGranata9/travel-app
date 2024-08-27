@@ -88,7 +88,7 @@ export default {
            </div>
          </div>
         <ol class="widget-49-meeting-points">
-          <li class="widget-49-meeting-item d-flex justify-content-between align-items-center" v-for="(tappa, index) in day.tappe" :key="tappa.titolo">
+          <li class="widget-49-meeting-item d-flex justify-content-between align-items-center mb-1" v-for="(tappa, index) in day.tappe" :key="tappa.titolo">
             <span class="fs-6">{{ tappa.titolo}}</span>
               <VisitedComp :id=getId() :dayInd=getIndex() :index=index></VisitedComp>
           </li>
@@ -407,6 +407,10 @@ export default {
 
 .widget-49 .widget-49-meeting-points .widget-49-meeting-item span {
   margin-left: .5rem;
+}
+
+ol{
+  padding-inline-start: 0;
 }
 
 .widget-49 .widget-49-meeting-action {
